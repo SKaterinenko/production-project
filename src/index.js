@@ -1,3 +1,3 @@
-import {someFn} from "src/test";
+import {someFn} from "./test";
 
 someFn()

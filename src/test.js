@@ -1,3 +1,3 @@
 export function someFn() {
-    console.log('Random function')
+    console.log('Random function 2')
 }
