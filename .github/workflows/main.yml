@@ -2,7 +2,7 @@ name: Building, linting
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-   branches: [main, dev]
+   branches: [main]
   pull_request:
     branches: [main, dev]
 jobs:
