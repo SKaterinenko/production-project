@@ -2,11 +2,11 @@ name: Building, linting
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-   branches: [main, dev]
+   branches: [main]
   pull_request:
     branches: [main, dev]
 jobs:
-  pipleine:
+  pipeline:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,9 +22,19 @@ jobs:
         run: npm install
       - name: Building prod project
         run: npm run build:prod
+        if: always()
       - name: Run ESLint
         run: npm run lint:ts
+        if: always()
       - name: Run StyleLint
         run: npm run lint:scss
+        if: always()
       - name: Run Unit Tests
         run: npm run test:unit
+        if: always()
+      - name: Run StoryBook build
+        run: npm run storybook:build
+        if: always()
+      - name: Run UI Tests
+        run: npm run test:ui:ci
+        if: always()
