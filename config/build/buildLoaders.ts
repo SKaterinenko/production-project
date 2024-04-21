@@ -44,16 +44,11 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
-                    outputPath: 'fonts/'
-                }
+                    outputPath: 'fonts/',
+                },
             },
         ],
     };
-
-    const fontsLoader =       {
-            test: /\.(woff|woff2|eot|ttf|otf)$/i,
-            type: 'asset/resource',
-        }
 
     return [
         fileLoader,
