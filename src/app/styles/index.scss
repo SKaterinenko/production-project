@@ -9,6 +9,9 @@
     background: var(--bg-color);
     color: var(--primary-color);
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility !important;
 }
 
 .content-page {
