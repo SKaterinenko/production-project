@@ -7,10 +7,10 @@ on:
     branches: [main, dev]
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
-        node-version: [17.x]
+        node-version: [17.4.0]
 
     steps:
       - uses: actions/checkout@v2

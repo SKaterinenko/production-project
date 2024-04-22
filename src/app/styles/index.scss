@@ -5,9 +5,13 @@
 
 .app {
     font: var(--font-m);
+    letter-spacing: var(--letter-spacing);
     background: var(--bg-color);
     color: var(--primary-color);
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility !important;
 }
 
 .content-page {
