@@ -3,15 +3,14 @@
 @import "themes/normal";
 @import "themes/dark";
 
-.app {
+body {
     font: var(--font-m);
-    letter-spacing: var(--letter-spacing);
-    background: var(--bg-color);
     color: var(--primary-color);
+}
+
+.app {
+    background: var(--bg-color);
     min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizelegibility !important;
 }
 
 .content-page {
